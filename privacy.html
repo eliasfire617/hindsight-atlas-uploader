@@ -12,28 +12,48 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p>Last updated: November 17, 2026</p>
+  <p><strong>Hindsight Atlas Uploader</strong> · Last updated: November 17, 2026</p>
 
-  <p>"Hindsight Atlas Uploader" (the "App") is a personal tool that uploads videos to the owner's own YouTube channel through the YouTube Data API. This policy explains what data the App accesses and how it is used.</p>
+  <p>This Privacy Policy describes how Hindsight Atlas Uploader (the "App") accesses, uses, stores and protects information when you sign in with your Google Account. The App is operated by the owner of the Hindsight Atlas YouTube channel (the "Operator"), who can be reached at <a href="mailto:rehobotlabs07@gmail.com">rehobotlabs07@gmail.com</a>. The App's home page is <a href="https://eliasfire617.github.io/hindsight-atlas-uploader/">https://eliasfire617.github.io/hindsight-atlas-uploader/</a>.</p>
 
-  <h2>Data the App accesses</h2>
-  <p>When the owner signs in with Google, the App requests permission to upload videos to the owner's YouTube channel. The App uses this access only to upload videos and their thumbnails to that channel. It does not read, edit or delete anything else on the channel.</p>
+  <h2>1. What the App does</h2>
+  <p>The App is a private publishing tool. It takes video files, titles, descriptions and thumbnail images that the Operator has produced, and uploads them to the Operator's own YouTube channel. It is not offered to the public and has no user accounts of its own.</p>
 
-  <h2>How data is used</h2>
-  <p>Google user data is used only to provide the App's single function: uploading videos to the owner's YouTube channel. It is not used for advertising, is not sold, and is not shared with third parties.</p>
+  <h2>2. Google user data the App accesses</h2>
+  <p>The App requests a single Google OAuth permission:</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/youtube.upload</code>: permission to upload videos and their thumbnails to the YouTube channel of the account that signs in.</li>
+  </ul>
+  <p>With this permission the App sends data to YouTube; it does not read the channel's existing videos, comments, subscribers, analytics, contacts, email, or any other Google data. Google returns an OAuth access token and refresh token to the App, and YouTube returns the ID of each uploaded video.</p>
 
-  <h2>Storage</h2>
-  <p>The App stores the OAuth authorization token locally on the owner's own computer or server so it can keep working without asking to sign in every time. The App does not collect, store, or transmit any other personal data, and it does not operate a public database of user information.</p>
+  <h2>3. How the data is used</h2>
+  <ul>
+    <li>The OAuth tokens are used only to authenticate upload requests to the YouTube Data API.</li>
+    <li>The video ID returned by YouTube is used only to attach the thumbnail and to keep a local record of what was uploaded.</li>
+  </ul>
+  <p>Google user data is not used for advertising, profiling, training of machine-learning models, or any purpose other than the upload function described above.</p>
 
-  <h2>Google API Services User Data Policy</h2>
-  <p>The App's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <h2>4. Storage and security</h2>
+  <p>The refresh token is stored in a single file on the Operator's own computer, readable only by the Operator's user account (file permission 600). The OAuth client secret is stored the same way. No Google user data is stored on any server, cloud database or third-party service operated by the App. All communication with Google uses HTTPS.</p>
 
-  <h2>Revoking access</h2>
-  <p>You can revoke the App's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <h2>5. Sharing</h2>
+  <p>Google user data is not sold, rented, or shared with any third party. It is transferred only to Google itself, through the YouTube Data API, in order to perform the upload.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy: <a href="mailto:rehobotlabs07@gmail.com">rehobotlabs07@gmail.com</a></p>
+  <h2>6. Retention and deletion</h2>
+  <p>The refresh token is kept until the Operator signs out or revokes access. You can revoke the App's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; once revoked, the stored token stops working and is deleted from the Operator's computer. Videos uploaded to YouTube remain on YouTube under YouTube's own terms and can be deleted from YouTube Studio. To request deletion of any data held by the App, write to the contact address below.</p>
 
-  <p><a href="index.html">← Back</a></p>
+  <h2>7. Limited Use</h2>
+  <p>The App's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. The App also follows the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a>, and users of the App are bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>8. Children</h2>
+  <p>The App is not directed to children under 13 and does not knowingly collect data from them.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new "Last updated" date.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions or requests about this policy: <a href="mailto:rehobotlabs07@gmail.com">rehobotlabs07@gmail.com</a></p>
+
+  <p><a href="index.html">← Back to home</a></p>
 </body>
 </html>
